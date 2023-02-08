@@ -1,0 +1,123 @@
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.cabecalhoPrincipal-nav {
+    display: flex;  /*o espaçamento entre os botões foi colocado nos styles*/
+
+}
+
+.cabecalhoPrincipal-nav-link {
+
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    height: 260px;
+    flex-flow: column wrap;  /*flex direction column e flex wrap wrap*/
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1; /*a flex  grow aplicado a lista faz com que ela cresça para completar o espaço vazio jogando o botão para baixo*/
+    flex-shrink: 2;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+@media screen and (max-width: 360px) {
+    
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
+}
+
+.cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
+
+.conteudoPrincipal-cursos {
+    flex-direction: column;
+    align-items: center;
+}
+.conteudoPrincipal-cursos-link {
+    width: 100%;
+}
+
+.videoSobre .container {
+    flex-direction: column;
+}
+
+.rodapePrincipal-navMap-list {
+    flex-direction: column;
+    height: auto;
+
+}
+.rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+}
+.rodapePrincipal-contatoForm {
+    width: 100%;
+}
+.rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+}
+.cabecalhoPrincipal-nav-link-app {
+    order: -1;
+}
+}
